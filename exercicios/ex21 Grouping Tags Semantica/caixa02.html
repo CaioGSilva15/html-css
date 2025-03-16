@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    
+    <style>
+        /* Grouping Tags = semantica. aqui montando estrutura basica
+        de um site com semantica*/
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+        
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        nav{
+            background-color: rgba(88, 85, 85, 0.605);
+            padding: 5px;
+            box-shadow: 3px 3px 8px 1px; /* inset depois do box shadow faço sonbra pra dentro.*/
+        }
+        nav > a{
+            text-decoration: none;
+            color: white;
+            font-weight: bolder;
+            margin-right: 30px;
+        }
+        nav > a:hover{
+            text-decoration: underline;
+        }
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 30px 20px 20px 30px;
+            box-shadow: inset 3px 3px 3px 3px rgba(0, 0, 0, 0.449);
+        }
+        article{
+            background-color: lightgray;
+            padding: 5px;
+        }
+        article > aside{
+            background-color: rgb(108, 106, 106);
+
+        }
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 1px;
+            margin: 0px;
+        }
+        div#bola{
+            height: 100px;
+            width: 100px;
+            background-color: aqua;
+            margin: 40px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="#">LINK</a>
+            <a href="#">LINK</a>
+            <a href="#">LINK</a>
+            <a href="#">LINK</a>
+            <a href="#">LINK</a>
+        </nav>
+
+    </header>
+    <main>
+        <section id="Assuntos">
+            <p>Esporte Politica e Tecnologia.</p>
+
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Noticias Sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                   Saepe numquam nulla provident! Aut porro sit iure, 
+                   incidunt cum ducimus itaque voluptatem unde placeat ipsum
+                   earum expedita possimus magnam eos! Perspiciatis.</p>
+                <aside>
+                    <p>Artigo escrito por josé Nonatto Silveira</p>
+                </aside>
+
+            </article>
+            <article>
+
+            </article>
+        </section>
+
+    </main>
+    <footer>
+        <p>Desenvolvido por Caio Gonçalves Silva</p>
+
+    </footer>
+    <div id="bola"></div>
+    
+</body>
+</html>
