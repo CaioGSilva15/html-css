@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        thead, tfoot{
+            background-color: gray;
+            color: white;
+        }
+
+        td.numero{
+            text-align: right;
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+    <h1>Tabelas Grandes.</h1>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES.
+            TABLE
+                THEAD  = Cabeça
+                TR, TD, TH      (aqui que posso Usar dentro de cada sessao.)  
+
+                TBODY  = Corpo
+                TR, TD, TH      (aqui que posso Usar dentro de cada sessao.)  
+
+                TFOOT  = Rodape
+                TR, TD, TH      (aqui que posso Usar dentro de cada sessao.)  
+    -->
+
+    <table> 
+        <thead>
+            <tr>
+                <th>Estado</th>
+                <th>População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td> São Paulo</td>
+                <td class="numero">49 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="numero">10 500 021</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="numero">20 440 012</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="numero">44 543 003</td>
+            </tr>
+            <tr>
+                <td>Parana</td>
+                <td class="numero">22 010 015</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td class="numero">90 021 210</td>
+            </tr>
+            <tr>
+                <td>Espirito Santo</td>
+                <td class="numero">51 092 030</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="numero">76 022 300</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso do Sul</td>
+                <td class="numero">97 099 193</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="numero">67 776 654</td>
+            </tr>
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Total de Habitantes</th>
+                <td class="numero"><strong>210 125 022</strong></td>
+            </tr>
+
+        </tfoot>
+    </table>
+    
+</body>
+</html>
