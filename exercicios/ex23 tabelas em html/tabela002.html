@@ -12,16 +12,35 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;  /*Configuração para Cabeçalho FIXO em Tabelas grandes*/
         }
 
         td, th{
             border: 1px solid black;
             padding: 10px;
+          
         }
+
+        caption{
+            font-size: 1,5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }        
 
         thead, tfoot{
             background-color: gray;
             color: white;
+        }
+
+        thead > tr > th{               /*Configuração para Cabeçalho FIXO em Tabelas grandes*/
+            position: sticky;           /*Configuração para Cabeçalho FIXO em Tabelas grandes*/
+            top: 0;                      /*Configuração para Cabeçalho FIXO em Tabelas grandes*/
+            background-color: gray;      /*Configuração para Cabeçalho FIXO em Tabelas grandes*/
+        }
+
+        tbody > tr:nth-child(2n){           /*Efeito ZEBRADO em Tabelas*/
+            background-color: lightgray;
         }
 
         td.numero{
@@ -37,7 +56,11 @@
     <h1>Tabelas Grandes.</h1>
     <!--
         ANATOMIA PARA TABELAS GRANDES.
+
             TABLE
+
+            CAPITION = Legenda , Titulo da Tabela
+
                 THEAD  = Cabeça
                 TR, TD, TH      (aqui que posso Usar dentro de cada sessao.)  
 
@@ -48,11 +71,15 @@
                 TR, TD, TH      (aqui que posso Usar dentro de cada sessao.)  
     -->
 
-    <table> 
+    <table>
+        
+        <caption>População das Unidades Federativas</caption>
+
         <thead>
+
             <tr>
                 <th>Estado</th>
-                <th>População</th>
+                <th style="width: 120px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -106,6 +133,90 @@
 
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+       Quisquam enim ab soluta minima, ipsa, nesciunt
+       nulla assumenda voluptatum, necessitatibus sed modi dolore. 
+       Laudantium distinctio atque soluta ipsum beatae vitae ducimus!
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+       Quisquam enim ab soluta minima, ipsa, nesciunt
+       nulla assumenda voluptatum, necessitatibus sed modi dolore. 
+       Laudantium distinctio atque soluta ipsum beatae vitae ducimus!
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+       Quisquam enim ab soluta minima, ipsa, nesciunt
+       nulla assumenda voluptatum, necessitatibus sed modi dolore. 
+       Laudantium distinctio atque soluta ipsum beatae vitae ducimus!
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+       Quisquam enim ab soluta minima, ipsa, nesciunt
+       nulla assumenda voluptatum, necessitatibus sed modi dolore. 
+       Laudantium distinctio atque soluta ipsum beatae vitae ducimus!
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+       Quisquam enim ab soluta minima, ipsa, nesciunt
+       nulla assumenda voluptatum, necessitatibus sed modi dolore. 
+       Laudantium distinctio atque soluta ipsum beatae vitae ducimus!
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+       Quisquam enim ab soluta minima, ipsa, nesciunt
+       nulla assumenda voluptatum, necessitatibus sed modi dolore. 
+       Laudantium distinctio atque soluta ipsum beatae vitae ducimus!
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+       Quisquam enim ab soluta minima, ipsa, nesciunt
+       nulla assumenda voluptatum, necessitatibus sed modi dolore. 
+       Laudantium distinctio atque soluta ipsum beatae vitae ducimus!
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+       Quisquam enim ab soluta minima, ipsa, nesciunt
+       nulla assumenda voluptatum, necessitatibus sed modi dolore. 
+       Laudantium distinctio atque soluta ipsum beatae vitae ducimus!
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+       Quisquam enim ab soluta minima, ipsa, nesciunt
+       nulla assumenda voluptatum, necessitatibus sed modi dolore. 
+       Laudantium distinctio atque soluta ipsum beatae vitae ducimus!
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+       Quisquam enim ab soluta minima, ipsa, nesciunt
+       nulla assumenda voluptatum, necessitatibus sed modi dolore. 
+       Laudantium distinctio atque soluta ipsum beatae vitae ducimus!
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+       Quisquam enim ab soluta minima, ipsa, nesciunt
+       nulla assumenda voluptatum, necessitatibus sed modi dolore. 
+       Laudantium distinctio atque soluta ipsum beatae vitae ducimus!
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+       Quisquam enim ab soluta minima, ipsa, nesciunt
+       nulla assumenda voluptatum, necessitatibus sed modi dolore. 
+       Laudantium distinctio atque soluta ipsum beatae vitae ducimus!
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+       Quisquam enim ab soluta minima, ipsa, nesciunt
+       nulla assumenda voluptatum, necessitatibus sed modi dolore. 
+       Laudantium distinctio atque soluta ipsum beatae vitae ducimus!
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+       Quisquam enim ab soluta minima, ipsa, nesciunt
+       nulla assumenda voluptatum, necessitatibus sed modi dolore. 
+       Laudantium distinctio atque soluta ipsum beatae vitae ducimus!
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+       Quisquam enim ab soluta minima, ipsa, nesciunt
+       nulla assumenda voluptatum, necessitatibus sed modi dolore. 
+       Laudantium distinctio atque soluta ipsum beatae vitae ducimus!
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+       Quisquam enim ab soluta minima, ipsa, nesciunt
+       nulla assumenda voluptatum, necessitatibus sed modi dolore. 
+       Laudantium distinctio atque soluta ipsum beatae vitae ducimus!
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+       Quisquam enim ab soluta minima, ipsa, nesciunt
+       nulla assumenda voluptatum, necessitatibus sed modi dolore. 
+       Laudantium distinctio atque soluta ipsum beatae vitae ducimus!
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+       Quisquam enim ab soluta minima, ipsa, nesciunt
+       nulla assumenda voluptatum, necessitatibus sed modi dolore. 
+       Laudantium distinctio atque soluta ipsum beatae vitae ducimus!
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+       Quisquam enim ab soluta minima, ipsa, nesciunt
+       nulla assumenda voluptatum, necessitatibus sed modi dolore. 
+       Laudantium distinctio atque soluta ipsum beatae vitae ducimus!
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+       Quisquam enim ab soluta minima, ipsa, nesciunt
+       nulla assumenda voluptatum, necessitatibus sed modi dolore. 
+       Laudantium distinctio atque soluta ipsum beatae vitae ducimus!
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+       Quisquam enim ab soluta minima, ipsa, nesciunt
+       nulla assumenda voluptatum, necessitatibus sed modi dolore. 
+       Laudantium distinctio atque soluta ipsum beatae vitae ducimus!</p>
     
 </body>
 </html>
