@@ -20,12 +20,11 @@
         }
 
         thead{
-            background-color: aqua;
-            width: 50px;
+            background-color:darkgray;
         }
 
         th,td{
-            border: 1px solid green;
+            border: 1px solid black;
             padding: 10px;
         }
 
@@ -33,50 +32,74 @@
     </style>
 </head>
 <body>
-
-    <h1>Exercicio de Tabelas</h1>
-    
 </body>
 
 <table>
     <caption>
-        Filmes Favoritos
+        Exercicio de Tabela
         
     </caption>
     <thead>
         <tr>
-            <th scope="col">Grupos</th>   <!--scoop =  definição do scopo do grupo. se é coluna, linha , ou Conjunto-->
-            <th scope="col">Nomes</th>     <!--definição Semantica-->
-            <th scope="colgroup" colspan="3">Filmes</th>
+            <th scope="col">Area</th>   <!--scoop =  definição do scopo do grupo. se é coluna, linha , ou Conjunto-->
+            <th scope="col">Diciplinas</th>     <!--definição Semantica-->
+            <th>Nota1</th>
+            <th>Nota2</th>
+            <th>Média</th>
             
         </tr>
 
     </thead>
     <tbody>
         <tr>
-            <th scope="rowgroup" rowspan="3">Exatas</th>
+            <th scope="rowgroup" rowspan="5">Exatas</th>
             <tr>
                 <td>matematica</td>
+                <td>2.0</td>
+                <td>4.0</td>
+                <td>3.0</td>
             </tr>
             <tr>
                 <td>fisica</td>
+                <td>6.0</td>
+                <td>4.0</td>
+                <td>5.0</td>
             </tr>
             <tr>
                 <td>quimica</td>
+                <td>8.0</td>
+                <td>8.0</td>
+                <td>8.0</td>
+            </tr>
+            <tr>
+                <td>Biologia</td>
+                <td>3.0</td>
+                <td>7.0</td>
+                <td>5.0</td>
+            </tr>
+            <tr>
+                <td style="background-color:darkgray;" colspan="4">Media de Exatas</td>
+                <td>9.0</td>
             </tr>
         </tr>
        
             <th scope="rowgroup" rowspan="3">Humanas</th>
             <tr>
-                <td>João Dourado</td>
+                <td>Historia</td>
+                <td>5.0</td>
+                <td>4.0</td>
+                <td>4.5</td>
             </tr>
             <tr>
-                <td>Animaniacs</td>
+                <td>Geografia</td>
+                <td>9.5</td>
+                <td>8.5</td>
+                <td>9.0</td>
             </tr>
             <tr>
-                <td>Flash</td>
+                <td style="background-color: darkgray" colspan="4">Média de Humanas</td>
+                <td>7.0</td>
             </tr>
-           
         </tr>
       
 </table>
