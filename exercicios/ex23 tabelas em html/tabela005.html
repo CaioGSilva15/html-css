@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas. Usando Colgroup !</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            width: 650px;
+            border-collapse: collapse;
+        }
+
+        caption{
+            font-size: 1.4em;
+            font-weight: bolder;
+            padding: 10px;
+        }
+
+        th,td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        tr.destak{
+            background-color: aqua;
+        }
+
+        .cprof,.cidade{
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercicio de Tabelas</h1>
+
+    <table>
+
+        <colgroup>
+            <col class="cnome">
+            <col class="cidade">
+            <col class="csexo">
+            <col class="cprof">
+        </colgroup>
+
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr class="destak">
+            <td >Caio Gonçalves</td>
+            <td>38</td>
+            <td>M</td>
+            <td>Motorista</td>
+        </tr>
+        <tr>
+            <td>Camila Dacol</td>
+            <td>36</td>
+            <td>F</td>
+            <td>Manicure</td>
+        </tr>
+        <tr>
+            <td>Davi Ribeiro</td>
+            <td>20</td>
+            <td>M</td>
+            <td>Auxiliar de Lipeza</td>
+        </tr>
+        <tr>
+            <td>Lucas Lucco</td>
+            <td>18</td>
+            <td>M</td>
+            <td>Gerente</td>
+        </tr>
+        <tr>
+            <td>Marco Lima</td>
+            <td>56</td>
+            <td>M</td>
+            <td>Motorista</td>
+        </tr>
+        <tr>
+            <td>Gabriela Silva</td>
+            <td>45</td>
+            <td>F</td>
+            <td>Vendedora</td>
+        </tr>
+        <tr>
+            <td>Lourdes Gonçalves</td>
+            <td>74</td>
+            <td>F</td>
+            <td>Dona de Casa</td>
+        </tr>
+        <tr>
+            <td>Antonio Bezera</td>
+            <td>55</td>
+            <td>M</td>
+            <td>Cordenador</td>
+        </tr>
+        <tr>
+            <td>Milena Souza</td>
+            <td>34</td>
+            <td>F</td>
+            <td>Estagiaria</td>
+        </tr>
+        <tr>
+            <td>Reginaldo Santos</td>
+            <td>39</td>
+            <td>M</td>
+            <td>Jardineiro</td>
+        </tr>
+    </table>
+</body>
+</html>
