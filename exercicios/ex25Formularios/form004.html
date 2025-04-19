@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 004.</title>
+</head>
+<body>
+
+    <h1>Exemplo de Formulario</h1>
+
+    <form action="cadastro.php" method="get" autocomplete="on">
+
+        <fieldset> <!--Aqui envelopei os campos e fiz um Agrupamento de campo. caixa em volta dos dados.-->
+
+            <legend>Dados Pessoais</legend> <!--aqui legenda do meu agrupamento caso eu queira-->
+        
+            <p>
+                <label for="inome">nome</label>
+                <input type="text" name="nome" id="inome" minlength="5" maxlength="20" required>
+            </p>
+            <p>
+                <label for="iemail">E-mail</label>
+                <input type="email" name="E-mail" id="iemail" autocomplete="email" required>
+            </p>
+            <p>
+                <label for="itel">tel</label>
+                <input type="tel" name="tel" id="itel" autocomplete="tel"
+                pattern="^\(\d{2}\)\d{4,5}-\d{4}$" required placeholder="(XX)XXXX-XXXX">
+    </fieldset>
+                 <!--Estudar Sobre Regex.       .caso eu queiro seria intesante-->
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    
+</body>
+</html>

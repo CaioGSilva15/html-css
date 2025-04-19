@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 005.</title>
+</head>
+<body>
+    <h1>Exemplo de Formulario</h1>
+
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="iMasc"  value="M" checked>  <label for="iMasc">Masculino</label>
+            <input type="radio" name="sexo" id="ifemin" value="F">          <label for="ifemin">Feminino</label>
+
+        </fieldset>
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+            <!--Checked = Ja deixo uma opçao marcada da minha escolha-->
+            <!--Label = Criei uma Relacao . do id com label. assim que tem q ser feito-->
+            <!--input:checkbox = cria caixa de multiplas escolhas, consigo marcar varios opçoes nas escolhas-->
+            <!--input:radio = cria caixa de apenas uma escolha. usar o mesmo nome na opção name. diferente no id.-->
+
+            <input type="checkbox" name="futebol" id="ifutebol">   <label for="ifutebol"> Futebol</label><br>
+            <input type="checkbox" name="basquete" id="ibasquete"> <label for="ibasquete">Basquete</label><br>
+            <input type="checkbox" name="tenis" id="itenis">       <label for="itenis">   Tenis</label><br>
+            <input type="checkbox" name="volei" id="ivolei">       <label for="ivolei">   Volei</label><br>
+            <input type="checkbox" name="natacao" id="inatacao">   <label for="inatacao"> Natação</label><br>
+            <input type="checkbox" name="ping-pong" id="iping-pong"><label for="iping-pong"> Ping - Pong</label><br>
+
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">  
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+</body>
+</html>
