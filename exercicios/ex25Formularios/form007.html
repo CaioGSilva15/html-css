@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 007.</title>
+</head>
+<body>
+
+    <h1>Exemplo de Formulario</h1>
+<form action="cadastro.php" method="post" autocomplete="on">
+    <p>
+        <label for="iestado">Estado</label> <!--aqui relacionei label ao id do select-->
+
+        <select name="estado" id="iestado"><!--aqui criei o  select e o option dentro e fui adcinando nomes a lista.-->
+            <option value="SP">São Paulo</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="MG">Mogi Guaçu</option>
+        <optgroup label="Regiao Nordeste"> <!--aqui fiz um agrupamento com optgroup e relacionei com o label. -->
+                <option value="MA">Maranhão</option>
+                <option value="PE">Pernanbuco</option>
+                <option value="RN">Rio Grande do Sul</option>
+        </optgroup>
+        </select>
+    </p>
+    <p>
+        <label for="iprofissao">Profissão</label>
+
+        <input type="text" name="profissao" id="iprofissao" list="profissao"> <!--aqui relacionei datalist ao meu input-->
+        <datalist id="profissao"> <!--Achei esta opção MELHOR!
+         PORQUE NESTA OPÇÃO eu consigo DIGITAR a Minha profissao. e na de Cima apenas Escolho as que tem . -->
+            <option value="ADM">Adiministrador</option>
+            <option value="CONT">Contabilista</option>
+            <option value="DEV">Desenvolvedor</option>
+            <option >Motorista (Viagem)</option>
+            <option >Motorista Manobrista</option>
+            <option >Analista de Dados</option>
+            <option >Manicure/Pedicure</option>
+            <option >Pedreiro</option>
+            <option value="ENG.">Engenheiro Estrutural</option>
+        </datalist>
+    </p>
+    <p>
+        <label for="imsg">Menssagem</label><br>
+        <textarea name="Menssagem" id="imsg" cols="40"  rows="8"></textarea>
+    </p>
+    <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </p>
+
+</form>
+    
+</body>
+</html>
