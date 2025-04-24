@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+/*Aqui nesse estylo coloquei todas todass MEDIA QUERIES juntas
+Achei mais bagunçado. melhor fazer cada estilo separado. 
+conforme a site vai cresendo estando tudo separado fica mais organizado. */ 
+
+
+/*cONFIGURAÇÕES = GERAIS*/
+@media all {
+
+    *{
+        margin: 0px;
+        padding: 0px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+        html,body{
+    
+       width: 100vw;
+       height: 100vh;
+       background-color: rgb(19, 50, 175);
+        background-size: contain;
+        background-repeat: no-repeat;
+    
+       }
+    
+       h1{
+           text-shadow: 3px 3px 0px rgba(8, 2, 47, 0.245);
+           padding: 15px;
+       }
+
+}
+            
+
+   /*cONFIGURAÇÕES = APARELHO EM PÉ (portrait)*/
+   @media screen and (orientation: portrait) {
+
+   body{
+       background-image: url(../imagens/cev-portrait.jpg);
+       background-position: center bottom;
+   }           
+   }
+
+
+   /*cONFIGURAÇÕES = APARELHO DEITADO (landscape)*/
+   @media screen and (orientation: landscape) {
+
+   body{
+       background-image: url(../imagens/cev-landscape.jpg);
+       background-position: left bottom;
+   }
+   }
