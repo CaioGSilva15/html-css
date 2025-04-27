@@ -19,8 +19,26 @@ header > h1{
     text-align: center;
 }
 
-menu{
+#burguer{
+    background-color: rgb(107, 109, 109);
+    color: red;
+    width: 100vw;
     display: block;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+
+}
+
+#burguer:hover{
+    background-color: black;
+    color: rgb(234, 26, 26); /*aqui nao esta funcionando mudar a cor do anburguinho. 
+    mudei no codigo do icone q puxei do google icons. kk*/
+}
+
+
+menu{
+    display: none;
 }
 
 menu > ul{
@@ -38,7 +56,8 @@ menu > ul > li > a{
 }
 
 menu > ul > li > a:hover{
-    background-color: grey;
+    background-color: white;
+    color: black;
 }
 
 main{
