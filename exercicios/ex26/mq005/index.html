@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Midia Queries</title>
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Meu Site</h1>
         <!--Aqui abaixo colei o codigo do icone menu q peguei no google icons,
          apenas colei o codigo aqui eo menu ja apareceu. aqui dentro do codigo dei um id="burguer"
          para eu poder configurar no stylo css e tbm mudei a cor fill do codigo para white. q é a cor do menu.
          tbm inseri no codigo q puxei do google o onclick="clickMenu" do java script para decer e subir o menu burguer.-->
-         
          <svg xmlns="http://www.w3.org/2000/svg" onclick="clickMenu()" height="30px" viewBox="0 -960 960 960" width="24px"
          fill="white" id="burguer"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
          
@@ -24,6 +24,9 @@
                 <li><a href="#">Opção 3</a></li>
                 <li><a href="#">Opção 4</a></li>
                 <li><a href="#">Opção 5</a></li>
+                <li><a href="#">Opção 6</a></li>
+                <li><a href="#">Opção 7</a></li>
+                <li><a href="#">Opção 8</a></li>
             </ul>
         </menu>
 
@@ -81,6 +84,15 @@
                 itens.style.display = 'none'
             }else{
                  itens.style.display = 'block'
+            }
+        }
+
+
+        function mudouTamanho() {
+            if(window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            }else{
+                 itens.style.display = 'none'
             }
         }
     </script>
