@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexibe Box</title>
+    <style>
+        div.container{    /*container éo pai. caixa maior, pai é quem vai receber a configuração DISPLAY FLEX*/
+            background-color: bisque;
+            display:flex;
+            flex-flow: row wrap;   /*aqui uma short rend dos dois valores abaixo. sempre melhor usar o FLEX-FLOW.*/
+            
+            /* flex-direction: row;
+               flex-wrap:     wrap; */
+        }
+
+        div.item{  /*item éo filho. caixa menores q estao dentro do container maior. no caso o pai.*/
+            background-color: rgb(0, 0, 255);
+            border: 1px solid rgb(220, 19, 19);
+            color: white;
+            flex: auto;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="item">Exemplo de Bloco - A</div>
+        <div class="item">Exemplo de Bloco - B</div>
+        <div class="item">Exemplo de Bloco - C</div>
+        <div class="item">Exemplo de Bloco - D</div>
+        <div class="item">Exemplo de Bloco - E</div>
+        <div class="item">Exemplo de Bloco - F</div>
+        <div class="item">Exemplo de Bloco - G</div>
+
+    </div>
+</body>
+</html>
