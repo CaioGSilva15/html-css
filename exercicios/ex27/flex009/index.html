@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Basis</title>
+    <style>
+        div.container{    /*container éo pai. caixa maior, pai é quem vai receber a configuração DISPLAY FLEX*/
+            background-color: bisque;
+            display:flex;
+
+            flex-flow: row nowrap; /*aqui deixei para nao quebrar. vai adaptar o tamanho*/
+        }
+
+        div.item{  /*item éo filho. caixa menores q estao dentro do container maior. no caso o pai.*/
+            background-color: aqua;
+            border: 1px solid black;
+            text-align: center;
+            flex-basis: 150px; /*aqui posso usar auto e ver o comportamento*/
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="item">A</div>
+        <div class="item">Outro Conteudo</div>
+        <div class="item">C</div>
+        <div class="item">Conteudo um pouco maior</div>
+        <div class="item">E</div>
+        <div class="item">Conteudo maior ainda que vai ocupar mais espaço.</div>
+        <div class="item">G</div>
+
+    </div>
+</body>
+</html>

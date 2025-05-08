@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexibe Box</title>
+    <style>
+        div.container{    /*container éo pai. caixa maior, pai é quem vai receber a configuração DISPLAY FLEX*/
+            background-color: bisque;
+            display:flex;
+            flex-flow: row wrap;
+            height: 400px;
+            align-content: space-between;
+
+           /* align-items: flex-start;      aqui por padrao é stret estica o item bloco dentro do container pai.*/
+        }
+
+        div.item{  /*item éo filho. caixa menores q estao dentro do container maior. no caso o pai.*/
+            background-color: aqua;
+            border: 1px solid black;
+            text-align: center;
+            padding: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">J</div>
+        <div class="item">M</div>
+
+
+
+    </div>
+</body>
+</html>

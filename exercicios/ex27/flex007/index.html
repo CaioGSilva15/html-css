@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexibe Box</title>
+    <style>
+        div.container{    /*container éo pai. caixa maior, pai é quem vai receber a configuração DISPLAY FLEX*/
+            background-color: bisque;
+            display:flex;
+            flex-flow: row wrap;
+        }
+
+        div.item{  /*item éo filho. caixa menores q estao dentro do container maior. no caso o pai.*/
+            background-color: aqua;
+            border: 1px solid black;
+            /*flex: auto;*/
+            text-align: center;
+            padding: 20px;
+        }
+
+        div#i1{
+            order: 0;              /* g b a f e c d */ 
+        }
+                                /*aqui ordenei os itens dentro do container
+                            valores menores q 0 vem primeiro, depois vem o 0. e depois vem os numeros crecentes.*/
+        div#i2{
+            order: -2;
+        }
+
+        div#i3{
+            order: 4;
+        }
+
+        div#i4{
+            order: 8;
+        }
+
+        div#i5{
+            order: 2;
+        }
+
+        div#i6{
+            order: 0;
+        }
+
+        div#i7{
+            order: -4;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="item"id="i1">A</div>
+        <div class="item"id="i2">B</div>
+        <div class="item"id="i3">C</div>
+        <div class="item"id="i4">D</div>
+        <div class="item"id="i5">E</div>
+        <div class="item"id="i6">F</div>
+        <div class="item"id="i7">G</div>
+
+    </div>
+</body>
+</html>

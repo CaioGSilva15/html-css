@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexibe Box</title>
+    <style>
+        div.container{    /*container éo pai. caixa maior, pai é quem vai receber a configuração DISPLAY FLEX*/
+            background-color: bisque;
+            display:flex;
+            flex-flow: row nowrap;
+        }
+
+        div.item{  /*item éo filho. caixa menores q estao dentro do container maior. no caso o pai.*/
+            background-color: aqua;
+            border: 1px solid black;
+            text-align: center;
+            flex-basis: 250px;
+
+            flex-shrink: 1; /* (ENCOLHER) essa propriedade por padrao é 1. e faz os itens (ENCOLHER) se adapitando a tela, 
+            dificilmente terei q mexer aqui.mudar para 0 faz os itens pararem d se adapitar. proriedade para filhos.*/
+
+            flex-grow: 1;  /*(ESTICAR) essa propriedade por padrão é 0. faz os itens (ESTICAREM) se adapitando a tela, 
+            LEGAL AQUI DEIXEI OS ITENS FILHOS 100% FLEXIVEIS A TELA*/
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="item">A Lorem ipsumdolor sit amet, consectetur adipisicing elit.Eveniet reprehenderit, comme minus,
+        distinctio velit eius cum deserunt rerum quos aperiam reiciendis culpa molestias sequi vero neque dignissimos.</div>
+        <div class="item">B A Lorem ipsumdolor sit amet, consectetur adipisicing elit.Eveniet reprehenderit, comme minus,
+         distinctio velit eius cum deserunt rerum quos aperiam reiciendis culpa molestias sequi vero neque dignissimos.
+         A Lorem ipsumdolor sit amet, consectetur adipisicing elit.Eveniet reprehenderit, comme minus,
+         distinctio velit eius cum deserunt rerum quos aperiam reiciendis culpa molestias sequi vero neque dignissimos.</div>
+        <div class="item">C A Lorem ipsumdolor sit amet, consectetur adipisicing elit.Eveniet reprehenderit, comme minus,
+        distinctio velit eius cum deserunt rerum quos aperiam reiciendis culpa molestias sequi vero neque dignissimos.
+        A Lorem ipsumdolor sit amet, consectetur adipisicing elit.Eveniet reprehenderit, comme minus,
+        distinctio velit eius cum deserunt rerum quos aperiam reiciendis culpa molestias sequi vero neque dignissimos.
+        A Lorem ipsumdolor sit amet, consectetur adipisicing elit.Eveniet reprehenderit, comme minus,
+        distinctio velit eius cum deserunt rerum quos aperiam reiciendis culpa molestias sequi vero neque dignissimos.</div>
+
+    </div>
+</body>
+</html>

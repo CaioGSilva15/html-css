@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexibe Box</title>
+    <style>
+        div.container{    /*container éo pai. caixa maior, pai é quem vai receber a configuração DISPLAY FLEX*/
+            background-color: bisque;
+            display:flex;
+            flex-flow: row nowrap;
+        }
+
+        div.item{  /*item éo filho. caixa menores q estao dentro do container maior. no caso o pai.*/
+            background-color: aqua;
+            border: 1px solid black;
+            text-align: center;
+            flex-basis: 200px;
+
+        }
+
+        div#cxA{
+            flex-shrink: 0;   /*NÃO VAI DIMINUIR*/
+            flex-grow: 0;     /*NÃO VAI CRECER*/
+        }
+
+        div#cxB{
+            flex-shrink: 1;  /*PROPORÇÃO DE ENCOLHIMENTO  =  VAI DIMINUIR NORMALMENTE*/
+            flex-grow: 1;   /*PROPORCÃO DE CRECIMENTO.    =  VAI CRECER NORMALMENTE*/
+        }
+
+        div#cxC{
+            flex-shrink: 6;  /*PROPORÇÃO DE ENCOLHIMENTO  =  VAI ENCOLHER 6 VEZES MAIS*/
+            flex-grow: 4;   /*PROPORCÃO DE CRECIMENTO.    =  VAI CRECER 4 VEZES MAIS*/
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="item" id="cxA">A</div>
+        <div class="item" id="cxB">B</div>
+        <div class="item" id="cxC">C</div>
+
+    </div>
+</body>
+</html>
